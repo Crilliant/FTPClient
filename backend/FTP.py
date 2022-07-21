@@ -55,12 +55,12 @@ class FTP():
         finally:
             print("present working path:"+str(self.ftp_server.pwd()))   # 打印当前路径
 
-    # 删除目录
-    def delete_dir(self, dir):
+    # 删除文件
+    def delete(self, file):
         try:
-            self.ftp_server.rmd(dir)
+            self.ftp_server.delete(file)
         except Exception as err:
-            print("delete dir fault: "+str(err))
+            print("delete fault: "+str(err))
 
     # 新建目录
     def make_dir(self, dir):        
@@ -97,7 +97,7 @@ class FTP():
 
 
 if __name__ == "__main__":
-    ftp = FTP_client(r"ftp.dlptest.com",'dlpuser','rNrKYTX9g7z3RgJRmxWuGHbeu')
+    ftp = FTP(r"ftp.dlptest.com",'dlpuser','rNrKYTX9g7z3RgJRmxWuGHbeu')
     # ftp = FTP()
     ftp.connect()
     # ftp.list_dir()

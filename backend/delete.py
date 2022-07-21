@@ -11,12 +11,12 @@ try:
     hostname = sys.argv[1]
     username = sys.argv[2]
     pwd = sys.argv[3]
-    dir = sys.argv[4]
+    file = sys.argv[4]
 except Exception as err:
     #捕捉异常
     str = 'exception:' + str(err)
     
 ftp = FTP(hostname, username, pwd)
 ftp.connect()
-ftp.delete_dir(dir)
+ftp.delete(file)
 ftp.disconnect()
