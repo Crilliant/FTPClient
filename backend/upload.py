@@ -17,6 +17,12 @@ except Exception as err:
     str = 'exception:' + str(err)
     
 ftp = FTP(hostname, username, pwd)
-ftp.connect()
-ftp.upload(file)
-ftp.disconnect()
+
+try:
+    ftp.connect()
+    ftp.upload(file)
+except Exception as err:
+    #捕捉异常
+    str = 'exception:' + str(err)
+finally:
+    ftp.disconnect()
