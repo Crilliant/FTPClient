@@ -1,7 +1,7 @@
 '''
     Created by Cyx on 2022.7.21
     FTP连接
-    调用：python connect.py r'ftp.dlptest.com' r'dlpuser' r'rNrKYTX9g7z3RgJRmxWuGHbeu'
+    调用：python connect.py ftp.dlptest.com dlpuser rNrKYTX9g7z3RgJRmxWuGHbeu
 '''
 
 from FTP import FTP
@@ -15,8 +15,14 @@ try:
 except Exception as err:
     #捕捉异常
     print('exception:' + str(err))
-else:
+    
+try:
     ftp = FTP(hostname, username, pwd)
     ftp.connect()
+except Exception as err:
+    #捕捉异常
+    print('exception:' + str(err))
+
+finally:
     ftp.disconnect()
     
