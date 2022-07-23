@@ -1,6 +1,7 @@
 '''
     Created by Cyx on 2022.7.21
     FTP改变当前路径
+    调用：python change_path.py ftp.dlptest.com dlpuser rNrKYTX9g7z3RgJRmxWuGHbeu 路径
 '''
 
 from FTP import FTP

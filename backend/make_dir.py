@@ -1,6 +1,7 @@
 '''
     Created by Cyx on 2022.7.21
     FTP新建文件夹
+    调用：python make_dir.py ftp.dlptest.com dlpuser rNrKYTX9g7z3RgJRmxWuGHbeu 新建目录名称
 '''
 
 from FTP import FTP

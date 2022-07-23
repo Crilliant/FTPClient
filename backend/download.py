@@ -1,6 +1,7 @@
 '''
     Created by Cyx on 2022.7.16
     FTP下载文件
+    调用：python download.py ftp.dlptest.com dlpuser rNrKYTX9g7z3RgJRmxWuGHbeu 要下载文件的名称（或者路径
 '''
 
 from FTP import FTP
