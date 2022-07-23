@@ -1,6 +1,7 @@
 '''
     Created by Cyx on 2022.7.16
-    FTP列出当前目录
+    FTP列出当前目录信息
+    调用：python list_dir.py ftp.dlptest.com dlpuser rNrKYTX9g7z3RgJRmxWuGHbeu
 '''
 
 from FTP import FTP

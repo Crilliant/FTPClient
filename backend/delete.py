@@ -1,6 +1,7 @@
 '''
     Created by Cyx on 2022.7.21
-    FTP删除文件夹
+    FTP删除文件
+    调用：python delete.py ftp.dlptest.com dlpuser rNrKYTX9g7z3RgJRmxWuGHbeu 服务器文件名
 '''
 
 from FTP import FTP

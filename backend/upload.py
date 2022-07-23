@@ -1,6 +1,7 @@
 '''
     Created by Cyx on 2022.7.16
     FTP上传文件
+    调用：python upload.py ftp.dlptest.com dlpuser rNrKYTX9g7z3RgJRmxWuGHbeu 本地文件路径
 '''
 
 from FTP import FTP
